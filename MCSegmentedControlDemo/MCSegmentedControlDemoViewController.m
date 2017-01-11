@@ -16,7 +16,6 @@
 - (void)dealloc
 {
 	self.testLabel = nil;
-    [super dealloc];
 }
 
 - (void)didReceiveMemoryWarning
@@ -55,7 +54,7 @@
 	segmentedControl.unselectedItemColor = [UIColor darkGrayColor];
 
 	[self.view addSubview:segmentedControl];
-	[segmentedControl release];
+//	[segmentedControl release];
 }
 
 - (void)viewDidUnload
